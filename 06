@@ -5,7 +5,6 @@
     <title></title>
   </head>
   <body>
-<body>
     <script>
         let word0="Wassup";
         let word0Translation=("здарова");
@@ -17,14 +16,15 @@
         let finishMessage="Молодец";
 
     
-        allert(word0);
-        allert(word0Translation);
-        allert(word1);
-        allert(word1Translation);
-        allert(word2);
-        allert(word2Translation);
+        let userAnswer0=prompt(word0);
+        allert(userAnswer0===word0Translation);
+        let userAnswer1=prompt(word1);
+        allert(userAnswer1===word1Translation);
+        let userAnswer2=prompt(word2);
+        allert(userAnswer2===word1Translation);
     
     
         allert(finishMessage);
     </script>
 </body>
+</html>
