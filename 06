@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путь самурая. Урок номер 6</title>
+    <link href="" rel="stylesheet"/>
+  </head>
+<body>
+    <script>
+        let word0="Wassup";
+        let word0Translation=("здарова");
+        let word1="Bye";
+        let word1Translation=("Покеда");
+        let word2="Programmer";
+        let word2Translation=("Программист");
+
+        let finishMessage="Молодец";
+
+    
+        allert(word0);
+        allert(word0Translation);
+        allert(word1);
+        allert(word1Translation);
+        allert(word2);
+        allert(word2Translation);
+    
+    
+        allert(finishMessage);
+    </script>
+</body>
