@@ -8,25 +8,40 @@
   </head>
   <body>
     <script>
-        let word0="Wassup";
-        let word0Translation=("здарова");
-        let word1="Bye";
-        let word1Translation=("Покеда");
-        let word2="Programmer";
-        let word2Translation=("Программист");
+        const word0="Wassup";
+        const word0Translation=("здарова");
+        const word1="Bye";
+        const word1Translation=("Покеда");
+        const word2="Programmer";
+        const word2Translation=("Программист");
+        const wordsCount = 3;
 
-        let finishMessage="Молодец";
+        const finishSuccessMessage="Молодец. Good result";
+        const finishUnsuccessMessage="Молодец. Но,постарайся лучше";
+
+        let correctAnswersCount = 0;
 
     
-        let userAnswer0=prompt(word0);
+        const userAnswer0=prompt(word0);
         allert(userAnswer0===word0Translation);
-        let userAnswer1=prompt(word1);
+        if (userAnswer0===word0Translation) {
+          correctAnswersCount=correctAnswersCount+1;
+        }
+        const userAnswer1=prompt(word1);
         allert(userAnswer1===word1Translation);
-        let userAnswer2=prompt(word2);
-        allert(userAnswer2===word1Translation);
-    
-    
-        allert(finishMessage);
+        if (userAnswer1===word1Translation) {
+          correctAnswersCount=correctAnswersCount+1;
+        }
+        const userAnswer2=prompt(word2);
+        allert(userAnswer2===word2Translation);
+        if (userAnswer2===word2Translation) {
+          correctAnswersCount=correctAnswersCount+1;
+        }
+      if (correctAnswersCount/wordsCount*100>50) {
+        allert(finishSuccessMessage);
+      } else {
+        allert(finishUnsuccessMessage);
+      }
     </script>
 </body>
 </html>
